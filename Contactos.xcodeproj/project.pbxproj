@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,6 +12,7 @@
 		CF8C56C32017F0EC00E2C389 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF8C56C12017F0EC00E2C389 /* Main.storyboard */; };
 		CF8C56C52017F0EC00E2C389 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF8C56C42017F0EC00E2C389 /* Assets.xcassets */; };
 		CF8C56C82017F0EC00E2C389 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF8C56C62017F0EC00E2C389 /* LaunchScreen.storyboard */; };
+		CF8C56D22017F70900E2C389 /* Contactos.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8C56D12017F70900E2C389 /* Contactos.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		CF8C56C42017F0EC00E2C389 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF8C56C72017F0EC00E2C389 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CF8C56C92017F0EC00E2C389 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF8C56D12017F70900E2C389 /* Contactos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contactos.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				CF8C56BD2017F0EC00E2C389 /* AppDelegate.swift */,
 				CF8C56BF2017F0EC00E2C389 /* ViewController.swift */,
+				CF8C56D12017F70900E2C389 /* Contactos.swift */,
 				CF8C56C12017F0EC00E2C389 /* Main.storyboard */,
 				CF8C56C42017F0EC00E2C389 /* Assets.xcassets */,
 				CF8C56C62017F0EC00E2C389 /* LaunchScreen.storyboard */,
@@ -92,7 +95,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0920;
-				ORGANIZATIONNAME = "Jorge Maldonado Borbón";
+				ORGANIZATIONNAME = codelapp;
 				TargetAttributes = {
 					CF8C56B92017F0EC00E2C389 = {
 						CreatedOnToolsVersion = 9.2;
@@ -101,7 +104,7 @@
 				};
 			};
 			buildConfigurationList = CF8C56B52017F0EC00E2C389 /* Build configuration list for PBXProject "Contactos" */;
-			compatibilityVersion = "Xcode 8.0";
+			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -136,6 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF8C56D22017F70900E2C389 /* Contactos.swift in Sources */,
 				CF8C56C02017F0EC00E2C389 /* ViewController.swift in Sources */,
 				CF8C56BE2017F0EC00E2C389 /* AppDelegate.swift in Sources */,
 			);
@@ -216,6 +220,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = singlefile;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -265,7 +270,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -275,9 +281,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WQWRXX9PHB;
 				INFOPLIST_FILE = Contactos/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jorge.Contactos;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.codelapp.Contactos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -289,9 +299,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WQWRXX9PHB;
 				INFOPLIST_FILE = Contactos/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jorge.Contactos;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.codelapp.Contactos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
